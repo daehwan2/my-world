@@ -1,8 +1,9 @@
 import { useAnimations, useGLTF } from "@react-three/drei";
+import { GroupProps } from "@react-three/fiber";
 import { useControls } from "leva";
 import React, { useEffect } from "react";
 
-const Dragon = () => {
+const Dragon = (props: GroupProps) => {
   const model = useGLTF("./models/dragon/scene.gltf");
   const animations = useAnimations(model.animations, model.scene);
   const { actionName } = useControls({
@@ -20,7 +21,11 @@ const Dragon = () => {
       action?.fadeOut(0.5);
     };
   }, [actionName]);
-  return <primitive object={model.scene} castShadow receiveShadow />;
+  return (
+    <group {...props} castShadow receiveShadow>
+      <primitive object={model.scene} />
+    </group>
+  );
 };
 
 export default Dragon;
