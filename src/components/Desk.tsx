@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useAnimations, useGLTF } from "@react-three/drei";
-import { GroupProps, PrimitiveProps } from "@react-three/fiber";
+import { GroupProps } from "@react-three/fiber";
 import { useControls } from "leva";
 import React, { useEffect } from "react";
 

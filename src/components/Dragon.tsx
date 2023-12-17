@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { GroupProps } from "@react-three/fiber";
 import { useControls } from "leva";
