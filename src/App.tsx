@@ -17,14 +17,18 @@ function App() {
 
       <Environment preset="sunset" />
       <directionalLight castShadow position={[0, 10, 10]} />
-      <Dragon position={[-4, 0, -4]} />
+      <Dragon position={[0, 0, 0]} />
       <Desk
         scale={0.08}
         position={[0, 0, -4]}
         rotation-y={THREE.MathUtils.degToRad(-90)}
       />
 
-      <Bed scale={0.01} />
+      <Bed
+        scale={0.01}
+        position={[-4.5, 0, -1]}
+        rotation-y={THREE.MathUtils.degToRad(90)}
+      />
       <Floor />
     </Canvas>
   );

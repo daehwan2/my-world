@@ -4,7 +4,7 @@ import * as THREE from "three";
 
 const Floor = () => {
   const textures = useTexture({
-    map: "./map-images/floor/Substance_Graph_BaseColor.jpg",
+    map: "./map-images/floor/Substance_Graph_BaseColor.png",
     normal: "./map-images/floor/Substance_Graph_Normal.jpg",
     roughness: "./map-images/floor/Substance_Graph_Roughness.jpg",
   });
